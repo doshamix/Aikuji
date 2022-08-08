@@ -1,0 +1,205 @@
+@import "../../styles/media/media.scss";
+
+.team {
+  margin-bottom: 52px;
+
+  @include md-max {
+    margin-bottom: 30px;
+  }
+
+  @include sm-max {
+    margin-bottom: -15px;
+  }
+
+  // TITLE
+  .t_title {
+    // background-color: red;
+    margin: 0 auto;
+    width: fit-content;
+    background-image: url(../../images/team_title_bg.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 58px 34px 0;
+    text-align: center;
+
+    @include md-max {
+      background-image: url(../..//images/team_title_tab_bg.svg);
+      padding: 36px 28px 0;
+    }
+
+    @include sm-max {
+      background-image: url(../..//images/team_title_mobile_bg.svg);
+      padding: 26px 22px 0;
+    }
+
+    h1 {
+      font-family: var(--ff-orbitron);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 57px;
+      line-height: 64px;
+      letter-spacing: -0.25px;
+      color: var(--primary-color);
+      text-transform: uppercase;
+
+      @include md-max {
+        font-size: 34px;
+        line-height: 44px;
+        letter-spacing: -0.171836px;
+      }
+
+      @include sm-max {
+        font-size: 23px;
+        line-height: 28px;
+        letter-spacing: -0.110422px;
+      }
+    }
+
+    p {
+      margin-top: 8px;
+      font-family: var(--ff-comfortaa);
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 44px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--white-color);
+
+      @include md-max {
+        font-size: 24.7444px;
+        line-height: 30px;
+        letter-spacing: 0.2em;
+      }
+
+      @include sm-max {
+        font-size: 15.9007px;
+        line-height: 19px;
+        letter-spacing: 0.2em;
+      }
+    }
+  }
+
+  // CARDS
+  .t_cards {
+    margin-top: 155px;
+
+    @include md-max {
+      margin-top: 125px;
+    }
+
+    @include sm-max {
+      margin-top: 100px;
+    }
+
+    .row {
+      @include md-max {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 11rem;
+      }
+
+      @include sm-max {
+        --bs-gutter-y: 9rem;
+      }
+
+      // CARD
+      .t_card {
+        position: relative;
+
+        .tc_bg {
+          display: unset;
+
+          @include sm-max {
+            display: none;
+          }
+        }
+
+        .tc_bg_mobile {
+          display: none;
+
+          @include sm-max {
+            display: unset;
+          }
+        }
+
+        .tc_user_img {
+          width: 110px;
+          position: absolute;
+          top: -64px;
+          left: 24px;
+        }
+
+        .tc_text {
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 2rem 1rem 0 1.7rem;
+
+          h4 {
+            text-align: right;
+            font-family: var(--ff-orbitron);
+            font-style: normal;
+            font-weight: 700;
+            font-size: 21.8684px;
+            line-height: 29px;
+            text-transform: uppercase;
+            color: var(--primary-color);
+            margin-right: 7px;
+          }
+
+          p {
+            font-family: var(--ff-Inter);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            color: #f1f1f1;
+            margin-top: 28px;
+          }
+        }
+
+        h6 {
+          position: absolute;
+          bottom: 20px;
+          left: 47px;
+          font-family: var(--ff-comfortaa);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 28px;
+          color: var(--white-color);
+
+          @include md-max {
+            left: 60px;
+            bottom: 25px;
+          }
+
+          @include sm-max {
+            left: 21%;
+          }
+        }
+
+        .tc_socials {
+          display: flex;
+          grid-gap: 9px;
+          width: fit-content;
+          position: absolute;
+          bottom: 21px;
+          right: 25px;
+
+          @include md-max {
+            bottom: 27px;
+            right: 30px;
+          }
+
+          .tcs_icon {
+            width: auto;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

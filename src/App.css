@@ -1,0 +1,31 @@
+.App {
+  position: relative;
+  z-index: 9999;
+}
+
+.custom_container {
+  padding: 0 5rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .custom_container {
+    padding: 0 76px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .custom_container {
+    padding: 0 32px;
+  }
+}
+
+.birds_anim div {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: -1;
+  display: block;
+}
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,231 @@
+.hero {
+  margin-top: 25px;
+  margin-bottom: 174px;
+}
+
+@media only screen and (max-width: 834px) {
+  .hero {
+    margin-top: 97px;
+    margin-bottom: 214px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hero {
+    margin-top: 46px;
+    margin-bottom: 105px;
+  }
+}
+
+.hero .h_seperator {
+  position: relative;
+  width: auto;
+  height: 84px;
+}
+
+@media only screen and (max-width: 834px) {
+  .hero .h_seperator {
+    display: none;
+  }
+}
+
+.hero .h_seperator div {
+  background-image: url(../../images/hero_seperator.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.hero .h_img {
+  width: 940px;
+  margin: 54px auto;
+}
+
+@media only screen and (max-width: 834px) {
+  .hero .h_img {
+    width: auto;
+    margin-bottom: 24px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hero .h_img {
+    margin-bottom: -12px;
+  }
+}
+
+.hero .timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-family: var(--ff-orbitron);
+  font-style: normal;
+  text-transform: uppercase;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 3.5rem;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 45px;
+}
+
+@media only screen and (max-width: 834px) {
+  .hero .timer {
+    padding: 0.5rem 3.5rem;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hero .timer {
+    width: 100%;
+    padding: 0.3rem 1.5rem;
+    margin-top: 5px;
+  }
+}
+
+.hero .timer .t_text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.2em;
+}
+
+@media only screen and (max-width: 834px) {
+  .hero .timer .t_text {
+    font-size: 13.7971px;
+    line-height: 18px;
+    letter-spacing: unset;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hero .timer .t_text {
+    font-size: 8.45102px;
+    line-height: 11px;
+  }
+}
+
+.hero .timer .t_time {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  margin-left: 45px;
+}
+
+@media only screen and (max-width: 834px) {
+  .hero .timer .t_time {
+    font-size: 20.6957px;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hero .timer .t_time {
+    font-size: 12.6765px;
+    line-height: 15px;
+    margin-left: auto;
+  }
+}
+
+.hero .timer .t_time span:nth-child(odd) {
+  font-weight: 700;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 834px) {
+  .hero .timer .t_time span:nth-child(odd) {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hero .timer .t_time span:nth-child(odd) {
+    font-size: 8px;
+  }
+}
+
+.hero .timer .t_time span:nth-child(even) {
+  margin-left: 15px;
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 576px) {
+  .hero .timer .t_time span:nth-child(even) {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+}
+
+.hero .timer .t_left_bg,
+.hero .timer .t_right_bg {
+  position: absolute;
+  width: 100.7%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media only screen and (max-width: 834px) {
+  .hero .timer .t_left_bg,
+  .hero .timer .t_right_bg {
+    width: 101.4%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hero .timer .t_left_bg,
+  .hero .timer .t_right_bg {
+    width: 102%;
+    background-size: cover;
+  }
+}
+
+.hero .timer .t_left_bg {
+  background-image: url(../../images/timer_left_bg.svg);
+  top: -6px;
+  left: -2px;
+  background-position: left top;
+}
+
+@media only screen and (max-width: 834px) {
+  .hero .timer .t_left_bg {
+    background-image: url(../../images/timer_left_tab_bg.svg);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hero .timer .t_left_bg {
+    background-image: url(../../images/timer_left_mobile_bg.svg);
+  }
+}
+
+.hero .timer .t_right_bg {
+  background-image: url(../../images/timer_right_bg.svg);
+  bottom: -6px;
+  right: -2px;
+  background-position: right bottom;
+}
+
+@media only screen and (max-width: 834px) {
+  .hero .timer .t_right_bg {
+    background-image: url(../../images/timer_right_tab_bg.svg);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hero .timer .t_right_bg {
+    background-image: url(../../images/timer_right_mobile_bg.svg);
+  }
+}
+/*# sourceMappingURL=Hero.module.css.map */

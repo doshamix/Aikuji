@@ -1,0 +1,27 @@
+.separator {
+  position: relative;
+  width: auto;
+  height: 80px;
+}
+
+.separator div {
+  background-image: url(../../images/separator_img.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 834px) {
+  .separator div {
+    background-image: url(../../images/separator_tab_img.svg);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .separator div {
+    background-image: url(../../images/separator_mobile_img.svg);
+  }
+}
+/*# sourceMappingURL=Separator.module.css.map */
